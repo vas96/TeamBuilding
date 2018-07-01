@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\jQuery\core.js" />
+    <Content Remove="wwwroot\lib\jQuery\jquery.js" />
+    <Content Remove="wwwroot\lib\jQuery\jquery.min.js" />
+    <Content Remove="wwwroot\lib\jQuery\jquery.min.map" />
+    <Content Remove="wwwroot\lib\jQuery\jquery.slim.js" />
+    <Content Remove="wwwroot\lib\jQuery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\lib\jQuery\jquery.slim.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\TBtest.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\netcoreapp2.0\TBtest.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\netcoreapp2.0\TBtest.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\TBtest.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\TBtest.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\TBtest.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\TBtest.pdb" />
+    <None Include="obj\TBtest.csproj.nuget.cache" />
+    <None Include="obj\TBtest.csproj.nuget.g.props" />
+    <None Include="obj\TBtest.csproj.nuget.g.targets" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-grid.css" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap.css" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap.min.css" />
+    <None Include="wwwroot\lib\bootstrap4\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap4\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\jQuery\core.js" />
+    <None Include="wwwroot\lib\jQuery\jquery.js" />
+    <None Include="wwwroot\lib\jQuery\jquery.min.js" />
+    <None Include="wwwroot\lib\jQuery\jquery.min.map" />
+    <None Include="wwwroot\lib\jQuery\jquery.slim.js" />
+    <None Include="wwwroot\lib\jQuery\jquery.slim.min.js" />
+    <None Include="wwwroot\lib\jQuery\jquery.slim.min.map" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,53 @@
+﻿@model TBtest.Models.PostModel
+
+@{
+    ViewBag.Title = "All POSTS";
+}
+
+<div class="text-center">
+    <h1 id="header">Projects</h1>
+    <hr class="postHr" />
+</div>
+<a asp-action="CreatePost">Додати проект</a>
+<hr class="underPost" />
+@foreach (var item in Model.Projects)
+{
+    <div class="row">
+        <div class="col-md-7 text-center postLdiv">
+            <h2> @item.PrjName </h2>
+            <hr class="postHr" />
+            <p>@item.PrjDesc</p>
+            <hr class="postHr" />
+            <button class="btn btn-block btn-light">
+                <a asp-action="FullPost" asp-controller="Home" asp-route-id="@item.ProjectId">Переглянути</a> |>
+            </button>
+        </div>
+        <div class="col-md-5 postRdiv">
+            <img src="~/images/social.png" class="float-lg-left" style="width:auto" ; height="180px;" alt="@item.PrjName" />
+            @{
+                var idUser = Model.Users.FirstOrDefault(u => u.Email == User.Identity.Name).UserId;
+                var existLike = Model.LikedPrjs.Any(i => i.User.UserId == idUser && i.Project.ProjectId == item.ProjectId);
+                if (existLike)
+                {
+                    <a asp-action ="UnLike" asp-controller="Home" asp-route-id="@item.ProjectId">
+                   <img src="~/images/hearts-like.png" class="float-lg-right unlike" style="width:auto" ; height="40px;" alt="like" />
+                    </a>
+                }
+                else
+                {
+                    <a asp-action="Like" asp-controller="Home" asp-route-id="@item.ProjectId">
+                        <img src="~/images/hearts-unlike.png" class="float-lg-right unlike" style="width:auto" ; height="40px;" alt="like" />
+                    </a>
+                }
+            }
+
+        </div>
+@*<a asp-action="Edit" asp-controller="Home" asp-route-id="@item.PostId">Изменить</a> |
+    <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.PostId">Удалить</a>*@
+</div>
+<hr class="underPost" />
+            }
+            <script src="~/lib/jQuery/jquery.min.js"></script>
+            <script>
+              
+            </script>

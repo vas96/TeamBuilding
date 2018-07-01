@@ -1,0 +1,31 @@
+﻿@model TBtest.Models.Post
+@{
+    ViewBag.Title = "Delete post";
+}
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>PrjName</dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrjName)
+        </dd>
+
+        <dt>PrjDesc</dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrjDesc)
+        </dd>
+
+        <dt>PrjLikeCounter</dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrjLikeCounter)
+        </dd>
+    </dl>
+
+    <div>
+        <form asp-controller="Home" asp-action="Delete" method="post">
+            <div class="form-group">
+                <input type="submit" class="btn btn-default" value="Delete" />
+            </div>
+        </form>
+    </div>
+</div>

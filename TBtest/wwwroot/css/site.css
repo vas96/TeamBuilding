@@ -1,0 +1,34 @@
+﻿body {
+    padding: 0 !important;
+    padding: 0 !important;
+}
+
+.underPost {
+    border: none;
+    color: #018574;
+    background-color: #018574;
+    height: 1.5vmin;
+}
+
+.postHr {
+    width: 13vmin;
+    border: none;
+    color: #018574;
+    background-color: #018574;
+    height: 0.8vmin;
+}
+
+.postRdiv {
+    border-left: 0.8vmin solid #018574;
+}
+
+.postLdiv p {
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#header {
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+}
